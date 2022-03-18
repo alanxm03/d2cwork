@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Wars</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+</head>
+
+<body>
+    <h1>Web Transition </h1>
+
+    <!-- Desctiption -->
+    <!-- <div class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum modi veritatis architecto iste labore sed voluptates illo atque, optio odit fugit qui, incidunt ipsa quod repudiandae corporis. Itaque, incidunt quaerat!</div> -->
+    
+    <!-- timeline -->
+    <h2 style="text-align: center;">Time line</h2>
+
+    <ul>
+        <li style="--accent-color:#41516C">
+            <div class="date">1930 - 1969</div>
+            <div class="tile">
+                <h4>Web 0.0</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil
+                    veniam.
+                </p>
+            </div>
+        </li>
+        <li style="--accent-color:#FBCA3E">
+            <div class="date">1970 - 1989</div>
+            <div class="tile">
+                <h4>Web 0.5</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil
+                    veniam.
+                </p>
+            </div>
+        </li>
+        <li style="--accent-color:#E24A68" onclick="modalFun('w1.0')">
+            <div class="date">1990 - 2000</div>
+            <div class="tile">
+                <h4>Web 1.0</h4>
+                <p>
+                    The first version of web Web 1.0 also referred as Syntactic web or read only web where the role of a user is just to read the content.
+                </p>
+            </div>
+        </li>
+        <li style="--accent-color:#1B5F8C">
+            <div class="date">2000 - present</div>
+            <div class="tile">
+                <h4>Web 2.0</h4>
+                <p>
+                    The Web 2.0 also referred as Social Web or read-write web which facilitates interaction between web users and client.
+                </p>
+            </div>
+        </li>
+        <li style="--accent-color:#4CADAD">
+            <div class="date">Present - Web3</div>
+            <div class="tile">
+                <h4>Web 2.5</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil
+                    veniam.
+                </p>
+            </div>
+        </li>
+
+        <li style="--accent-color:#4CADAD">
+            <div class="date">Beyond</div>
+            <div class="tile">
+                <h4 >Web 3.0</h4>
+                <p >
+                    The Web 3.0 also referred as Semantic Web or read-write-execute web which refers to the future of web. 
+                </p>
+            </div>
+        </li>
+    </ul>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="titleModal" >
+                <p style="margin-left: 45%; color: black;" id="mtitle">title</p>
+            </h3>
+            <hr><br>
+
+            <section class="modalrow">
+                <div id="col1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                        alt="" height="200px" width="300px">
+                    </div>
+
+                <div id="col2">
+                    <h3>Desctiption</h3>
+                    <p id="mdesc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel corrupti sed architecto nobis
+                        eaque?
+                        Eligendi, possimus repellendus consequuntur ut mollitia vero veritatis reiciendis, fuga sequi
+                        aliquid aspernatur commodi nisi.
+                    </p>
+                </div>
+               
+            </section>
+
+        </div>
+
+    </div>
+
+</body>
+<!-- Script -->
+<script src="../js/styles.js"></script>
+
+<!-- <script>
+    var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var close = document.getElementsByClassName("close")[0];
+    const webb={
+    "w1.0":"web1",
+    "w2.0":"web2",
+    "w3.0":"web3"
+
+}
+function modalFun(w){
+    modal.style.display = "block";
+
+    var title = document.getElementById("mtitle");
+    var desc = document.getElementById("mdesc");
+
+    title.innerText=w
+    desc.innerText=webb[w]
+    console.log("yes");
+}
+
+
+close.onclick = function () {
+    modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> -->
+</html>
